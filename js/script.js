@@ -2,10 +2,14 @@ const inputText = document.querySelector(".input__item");
 const addBtn = document.querySelector(".add__btn");
 const list = document.querySelector(".list");
 
-addBtn.addEventListener("click", function () {
+const allitems = document.querySelectorAll(".item");
+
+// ========================================================
+// ========================================================
+const addItem = function () {
   const itemText = inputText.value;
 
-  if (itemText.length > 0) {
+  if (itemText.trim().length > 0) {
     const item = `
       <li class="home__box__item">
       ${itemText}
@@ -18,9 +22,22 @@ addBtn.addEventListener("click", function () {
 
     list.insertAdjacentHTML("beforeend", item);
   }
+};
 
+addBtn.addEventListener("click", function () {
+  addItem();
   inputText.value = "";
   inputText.focus();
 });
 
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    addItem();
+    inputText.value = "";
+    inputText.focus();
+  }
+});
+
 inputText.focus();
+
+// ==========================================================

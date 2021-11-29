@@ -20,19 +20,25 @@
         <h1 class="primary__heading">To-do List</h1>
 
         <div class="home__head">
-          <input type="text" class="home__head__input input__item" />
+          <input
+            type="text"
+            class="home__head__input input__item"
+            placeholder="add new to-do"
+          />
           <button type="submit" class="add__btn">Add</button>
         </div>
 
         <div class="home__box">
           <ul class="home__box__list list">
             <!-- ------------------------------------------------- -->
-            <li class="home__box__item">
+            <li class="home__box__item item">
               item 1
               <div class="home__box__item__icons">
                 <span class="material-icons edit__item"> edit </span>
                 <span class="material-icons done__item"> done </span>
-                <span class="material-icons delete__item"> clear </span>
+                <span class="material-icons delete__item" data-num="0">
+                  clear
+                </span>
               </div>
             </li>
           </ul>
