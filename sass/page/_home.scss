@@ -1,0 +1,137 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 60rem;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 7rem 3rem;
+    overflow: hidden;
+  }
+
+  &__head {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+
+    &__input {
+      width: 80%;
+      height: 4.5rem;
+
+      padding: 0.5rem 1rem;
+
+      font-size: 2.4rem;
+
+      border: 2px solid #0686cc;
+      outline: none;
+    }
+  }
+
+  &__box {
+    width: 100%;
+    height: auto;
+
+    &__item {
+      list-style: none;
+
+      padding: 1rem 2rem;
+
+      font-size: 2.6rem;
+      font-weight: 400;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:nth-child(odd) {
+        color: #000000;
+        background-color: #9ccdf8;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #045c8b;
+      }
+
+      &__icons {
+        width: 12rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.add__btn {
+  width: 10rem;
+  padding: 0.75rem 2rem;
+
+  font-size: 2.4rem;
+  font-weight: 500;
+
+  color: #fff;
+
+  background-color: #0686cc;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #045c8b;
+  }
+}
+
+// ----------------------------------------------------
+
+.material-icons {
+  font-size: 2.8rem;
+  cursor: pointer;
+
+  border-radius: 1rem;
+
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid #000000;
+  }
+}
+
+.edit__item {
+  color: green;
+
+  &:hover {
+    color: #005c00;
+  }
+}
+
+.done__item {
+  color: #0686cc;
+
+  &:hover {
+    color: #045c8b;
+  }
+}
+
+.delete__item {
+  color: red;
+
+  &:hover {
+    color: hsl(0, 96%, 44%);
+  }
+}

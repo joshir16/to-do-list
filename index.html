@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>To-do</title>
+  </head>
+  <body>
+    <div class="home">
+      <div class="home__container">
+        <h1 class="primary__heading">To-do List</h1>
+
+        <div class="home__head">
+          <input type="text" class="home__head__input input__item" />
+          <button type="submit" class="add__btn">Add</button>
+        </div>
+
+        <div class="home__box">
+          <ul class="home__box__list list">
+            <!-- ------------------------------------------------- -->
+            <li class="home__box__item">
+              item 1
+              <div class="home__box__item__icons">
+                <span class="material-icons edit__item"> edit </span>
+                <span class="material-icons done__item"> done </span>
+                <span class="material-icons delete__item"> clear </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
