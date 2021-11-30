@@ -11,6 +11,7 @@ const allitems = document.querySelectorAll(".item");
 const deleteBtn = document.querySelector(".delete__item");
 
 // ========================================================
+let itemNum = 0;
 // ========================================================
 const addItem = function () {
   const itemText = inputText.value;
@@ -18,9 +19,12 @@ const addItem = function () {
   if (itemText.trim().length > 0) {
     const item = `
     <li class="home__box__item item">
-      ${itemText}
+      <input type="checkbox"  id="item--${itemNum}" class="item__checkbox" />
+      <label for="item--${itemNum}" class="item__checkbox__label">${itemText}</label>
         <span class="material-icons delete__item"> clear </span>
     </li>`;
+
+    itemNum++;
 
     list.insertAdjacentHTML("beforeend", item);
   }
