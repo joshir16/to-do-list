@@ -39,8 +39,11 @@
 
       font-size: 2.4rem;
 
-      border: 2px solid #0686cc;
       outline: none;
+      border: 1px solid #045c8b;
+
+      color: rgb(211, 211, 211);
+      background-color: rgba(0, 19, 36, 0.8);
 
       &::placeholder {
         font-size: 2rem;
@@ -66,8 +69,8 @@
       align-items: center;
 
       &:nth-child(odd) {
-        color: #000000;
-        background-color: #bee1ff;
+        // color: #000000;
+        background-color: rgba(0, 19, 36, 0.8);
       }
 
       &:not(:last-child) {
@@ -75,7 +78,7 @@
       }
 
       &__icons {
-        width: 12rem;
+        width: 80rem;
 
         display: flex;
         justify-content: space-between;
@@ -95,14 +98,15 @@
   color: #fff;
 
   background-color: #0686cc;
+  background-color: rgba(0, 19, 36, 0.8);
+  border: 1px solid #045c8b;
 
-  border: none;
   outline: none;
 
   cursor: pointer;
 
   &:hover {
-    background-color: #045c8b;
+    background-color: #00334e;
   }
 }
 
@@ -129,13 +133,13 @@
   }
 }
 
-.done__item {
-  color: #0686cc;
+// .done__item {
+//   color: #0686cc;
 
-  &:hover {
-    color: #045c8b;
-  }
-}
+//   &:hover {
+//     color: #045c8b;
+//   }
+// }
 
 .delete__item {
   color: red;

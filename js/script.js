@@ -1,8 +1,14 @@
 const inputText = document.querySelector(".input__item");
 const addBtn = document.querySelector(".add__btn");
+
+// .............................................................
 const list = document.querySelector(".list");
 
+// .............................................................
 const allitems = document.querySelectorAll(".item");
+
+// .............................................................
+const deleteBtn = document.querySelector(".delete__item");
 
 // ========================================================
 // ========================================================
@@ -11,14 +17,10 @@ const addItem = function () {
 
   if (itemText.trim().length > 0) {
     const item = `
-      <li class="home__box__item">
+    <li class="home__box__item item">
       ${itemText}
-      <div class="home__box__item__icons">
-      <span class="material-icons edit__item"> edit </span>
-      <span class="material-icons done__item"> done </span>
-      <span class="material-icons delete__item"> clear </span>
-      </div>
-      </li>`;
+        <span class="material-icons delete__item"> clear </span>
+    </li>`;
 
     list.insertAdjacentHTML("beforeend", item);
   }
@@ -41,3 +43,11 @@ document.addEventListener("keydown", function (e) {
 inputText.focus();
 
 // ==========================================================
+// delete li -----------------------------------------------
+list.addEventListener("click", function (e) {
+  let closestLi = e.target.closest(".item");
+
+  if (e.target.classList.contains("delete__item")) {
+    closestLi.parentNode.removeChild(closestLi);
+  }
+});
