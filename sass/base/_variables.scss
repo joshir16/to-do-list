@@ -1,0 +1,26 @@
+$bp-huge: 93.75em; // 1500px
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 28.75em; // 460px
+
+// =================================================================
+
+:root {
+  --color-black: #000;
+
+  --color-white: #ffffff;
+  --color-grey: #ccc;
+
+  --color-light-blue: #0686cc;
+  --color-dark-blue: #001324cc;
+}
+
+// ===============================================================
+
+@mixin flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
