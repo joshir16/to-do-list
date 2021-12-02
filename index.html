@@ -15,33 +15,56 @@
     <title>To-do</title>
   </head>
   <body>
-    <div class="home">
-      <div class="home__container">
-        <h1 class="primary__heading">To-do List</h1>
+    <header class="header">
+      <h1 class="header__heading">To-do List</h1>
+      <p class="header__para"><span class="task-num">0</span> tasks</p>
+    </header>
+    <main>
+      <section class="home">
+        <ul id="list" class="home__list">
+          <!-- <li class="home__item item">
+            <div class="home__item__text">
+              <input
+                type="checkbox"
+                id="checkbox-1"
+                class="home__item__text__checkbox"
+              />
 
-        <div class="home__head">
-          <input
-            type="text"
-            class="home__head__input input__item"
-            placeholder="add new to-do"
-          />
-          <button type="submit" class="add__btn">Add</button>
-        </div>
-
-        <div class="home__box">
-          <ul class="home__box__list list">
-            <!-- ------------------------------------------------- -->
-            <!-- <li class="home__box__item item">
-              <input type="checkbox" id="item--1" class="item__checkbox" />
-              <label for="item--1" class="item__checkbox__label">
+              <span class="home__item__text__checkbox__span"></span>
+              <label for="checkbox-1" class="home__item__text__task">
                 item 1
               </label>
-              <span class="material-icons delete__item"> clear </span>
-            </li> -->
-          </ul>
+            </div>
+
+            <div class="home__item__icons">
+              <span
+                class="material-icons home__item__icons__delete delete__btn"
+              >
+                clear
+              </span>
+            </div>
+          </li> -->
+        </ul>
+
+        <!-- ======================================================================== -->
+        <div class="home__box">
+          <div class="home__box__text">
+            <span class="material-icons home__box__text__icon"> add </span>
+            <input
+              type="text"
+              id="input"
+              class="home__box__text__input"
+              maxlength="20"
+              placeholder="new task here"
+            />
+          </div>
+
+          <button type="submit" id="add__btn" class="home__box__btn">
+            Add item
+          </button>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <script src="js/script.js"></script>
   </body>
