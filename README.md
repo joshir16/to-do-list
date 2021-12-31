@@ -1,3 +1,9 @@
-<!-- @format -->
+# To-do List
 
-# To-do --> https://joshir16.github.io/to-do-list/
+## Authors
+
+- [@Rishabh Joshi](https://www.github.com/joshir16)
+
+## Demo
+
+https://joshir16.github.io/to-do-list/
