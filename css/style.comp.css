@@ -86,52 +86,16 @@ h1 {
     border-bottom: 2px solid var(--color-grey);
     padding: 1rem 0;
     margin-bottom: 2rem; }
-    .home__item__text {
-      width: 65%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      justify-content: flex-start; }
-      .home__item__text__checkbox {
-        display: none; }
-        .home__item__text__checkbox__span {
-          width: 1.4rem;
-          height: 1.4rem;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          background-color: transparent;
-          margin-right: 2rem; }
-          .home__item__text__checkbox__span::after {
-            content: "";
-            display: block;
-            width: 2.2rem;
-            height: 2.2rem;
-            border-radius: 50%;
-            position: absolute;
-            border: 2px solid var(--color-black); }
-        .home__item__text__checkbox:checked ~ .home__item__text__checkbox__span {
-          background-color: var(--color-black); }
-      .home__item__text__task {
-        font-size: 2.6rem; }
-      .home__item__text__checkbox:checked ~ .home__item__text__task {
-        text-decoration: line-through;
-        opacity: 0.7; }
-    .home__item__icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      justify-content: space-between; }
-      .home__item__icons__delete {
-        border: 2px solid var(--color-black);
-        border-radius: 50%;
-        transition: all o 0.2s ease-in-out;
-        cursor: pointer; }
-        .home__item__icons__delete:hover {
-          color: red;
-          border: 2px solid red; }
+    .home__item__task {
+      font-size: 2.6rem; }
+    .home__item__delete {
+      border: 2px solid var(--color-black);
+      border-radius: 50%;
+      transition: all o 0.2s ease-in-out;
+      cursor: pointer; }
+      .home__item__delete:hover {
+        color: red;
+        border: 2px solid red; }
   .home__box {
     width: 100%;
     display: flex;

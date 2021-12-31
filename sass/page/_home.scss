@@ -41,72 +41,21 @@
 
     margin-bottom: 2rem;
 
-    &__text {
-      width: 65%;
-
-      //   padding: 0 1rem;
-
-      @include flexBox;
-      justify-content: flex-start;
-
-      &__checkbox {
-        display: none;
-
-        &__span {
-          width: 1.4rem;
-          height: 1.4rem;
-          border-radius: 50%;
-
-          @include flexBox;
-          position: relative;
-          background-color: transparent;
-
-          margin-right: 2rem;
-
-          &::after {
-            content: "";
-            display: block;
-            width: 2.2rem;
-            height: 2.2rem;
-            border-radius: 50%;
-
-            position: absolute;
-
-            border: 2px solid var(--color-black);
-          }
-        }
-
-        &:checked ~ &__span {
-          background-color: var(--color-black);
-        }
-      }
-
-      &__task {
-        font-size: 2.6rem;
-      }
-
-      &__checkbox:checked ~ &__task {
-        text-decoration: line-through;
-        opacity: 0.7;
-      }
+    &__task {
+      font-size: 2.6rem;
     }
 
-    &__icons {
-      @include flexBox;
-      justify-content: space-between;
+    &__delete {
+      border: 2px solid var(--color-black);
+      border-radius: 50%;
 
-      &__delete {
-        border: 2px solid var(--color-black);
-        border-radius: 50%;
+      transition: all o.2s ease-in-out;
 
-        transition: all o.2s ease-in-out;
+      cursor: pointer;
 
-        cursor: pointer;
-
-        &:hover {
-          color: red;
-          border: 2px solid red;
-        }
+      &:hover {
+        color: red;
+        border: 2px solid red;
       }
     }
   }
